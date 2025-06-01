@@ -1,0 +1,29 @@
+.button {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  padding: 0.5em 1.2em;
+  border: none;
+  border-radius: var(--radius-l);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.button:hover {
+  background-color: var(--color-text);
+}
+
+.arrow-icon {
+  width: 1.2em;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.button:hover .arrow-icon {
+  transform: translateX(4px);
+}

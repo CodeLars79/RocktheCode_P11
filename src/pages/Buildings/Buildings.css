@@ -1,0 +1,134 @@
+.title {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 50px;
+  color: var(--color-background);
+  background: var(--color-primary);
+}
+
+.title h2 {
+  font-size: var(--font-size-l);
+  color: var(--color-background);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title p {
+  font-size: var(--font-size-sm);
+  color: var(--color-background);
+  text-align: center;
+  max-width: 1000px;
+}
+
+.title img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 50px;
+  background-color: var(--rtc-color-green);
+  margin-bottom: 200px;
+  padding: 100px 20px;
+}
+
+.projects h2 {
+  font-size: var(--font-size-l);
+  color: var(--color-text);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 2s ease-out forwards;
+  padding: 100px 0;
+}
+
+.projects p {
+  font-size: var(--font-size-sm);
+  max-width: 900px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-l);
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+.controls-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 1rem;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  max-width: 1000px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.controls input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  flex: 1;
+  max-width: 400px;
+  border-radius: var(--radius-m);
+  border: var(--color-muted) 1px solid;
+  font-family: var(--font-family-base);
+  background-color: var(--color-background);
+}
+
+.controls select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  flex: 1;
+  max-width: 200px;
+  border-radius: var(--radius-m);
+  border: var(--color-muted) 1px solid;
+  font-family: var(--font-family-base);
+  background-color: var(--color-background);
+}
+
+@media (max-width: 768px) {
+  .title h2 {
+    font-size: 40px;
+  }
+
+  .title p {
+    font-size: 22px;
+    max-width: 90%;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+
+  .controls input {
+    width: 300px;
+  }
+
+  .controls select {
+    width: 300px;
+  }
+
+  .title img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+}

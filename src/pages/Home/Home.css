@@ -1,0 +1,105 @@
+.home,
+.home-about,
+.home-map,
+.home-projects {
+  position: relative;
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.home-hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  color: var(--color-background);
+  font-size: 3rem;
+  text-align: center;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 2s ease-out forwards;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+.signature {
+  margin-top: var(--spacing-m);
+  opacity: 0;
+  animation: fadeInUp 2.5s ease-out forwards;
+}
+
+.home h2,
+.home-about h2,
+.home-map h2,
+.home-projects h2 {
+  font-size: var(--font-size-l);
+  color: var(--color-primary);
+  max-width: 80%;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 2s ease-out forwards;
+}
+
+.home p,
+.home-about p,
+.home-projects p,
+.home-map p {
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+  max-width: 900px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 2s ease-out forwards;
+  margin-bottom: 50px;
+  padding: 20px 50px;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 40px;
+  }
+
+  .home h2,
+  .home-about h2,
+  .home-map h2,
+  .home-projects h2 {
+    font-size: 40px;
+  }
+
+  .home p,
+  .home-about p,
+  .home-map p,
+  .home-projects p {
+    font-size: 22px;
+  }
+}

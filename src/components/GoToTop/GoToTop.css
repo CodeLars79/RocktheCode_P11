@@ -1,0 +1,25 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: var(--spacing-l);
+  right: var(--spacing-l);
+  background-color: transparent;
+  color: var(--color-text);
+  border: none;
+  font-size: 3rem;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 999;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.scroll-to-top:hover {
+  transform: scale(1.2);
+}
